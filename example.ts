@@ -1,4 +1,4 @@
-import { Uint32 } from "./mod.ts";
+import { Uint32, Float32 } from "./mod.ts";
 
 const a = new Uint32(200n);
 const b = new Uint32(100n);
@@ -22,3 +22,9 @@ const e = Uint32.fromLeBytes(
 
 console.log(d.value()); // 305419896n(0x1234_5678n)
 console.log(e.value()); // 2018915346n(0x7856_3412n)
+
+const f = Float32.fromBeBytes(
+    new Uint8Array([0x40, 0x5C, 0xCC, 0xCD]),
+)
+
+console.log(f.value()); // 3.45

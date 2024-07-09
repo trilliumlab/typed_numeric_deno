@@ -12,6 +12,8 @@ export { Uint64 } from "./src/numeric/uint64.ts";
 export { Uint128 } from "./src/numeric/uint128.ts";
 export { Uint256 } from "./src/numeric/uint256.ts";
 
+export { Float32 } from "./src/numeric/float32.ts";
+
 export { Int8Vector } from "./src/vector/int8vector.ts";
 export { Int16Vector } from "./src/vector/int16vector.ts";
 export { Int32Vector } from "./src/vector/int32vector.ts";
